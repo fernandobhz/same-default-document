@@ -1,6 +1,6 @@
 {
   "name": "same-default-document",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use /public/folder/folder.html as default document",
   "main": "index.js",
   "scripts": {
