@@ -10,7 +10,7 @@ module.exports = function(publicFolder) {
             const base = match[1];
             const realpath = path.resolve(publicFolder, base);            
         
-            if (fs.existsSync(realpath)) {
+            if (fs.existsSync(realpath) && req.method === "GET") {
                 req.url = `/${base}/${base}.html`;
             }
         }
